@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<script type="text/javascript">
+var browser=navigator.appName
+var b_version=navigator.appVersion
+var version=parseFloat(b_version)
+document.write("浏览器名称："+ browser)
+document.write("<br />")
+document.write("浏览器版本："+ version)
+
+
+
+document.write("<p>浏览器：")
+document.write(navigator.appName + "</p>")
+
+document.write("<p>浏览器版本：")
+document.write(navigator.appVersion + "</p>")
+
+document.write("<p>代码：")
+document.write(navigator.appCodeName + "</p>")
+
+document.write("<p>平台：")
+document.write(navigator.platform + "</p>")
+
+document.write("<p>Cookies 启用：")
+document.write(navigator.cookieEnabled + "</p>")
+
+document.write("<p>浏览器的用户代理报头：")
+document.write(navigator.userAgent + "</p>")
+
+
+
+
+var x = navigator;
+document.write("CodeName=" + x.appCodeName);
+document.write("<br />");
+document.write("MinorVersion=" + x.appMinorVersion);
+document.write("<br />");
+document.write("Name=" + x.appName);
+document.write("<br />");
+document.write("Version=" + x.appVersion);
+document.write("<br />");
+document.write("CookieEnabled=" + x.cookieEnabled);
+document.write("<br />");
+document.write("CPUClass=" + x.cpuClass);
+document.write("<br />");
+document.write("OnLine=" + x.onLine);
+document.write("<br />");
+document.write("Platform=" + x.platform);
+document.write("<br />");
+document.write("UA=" + x.userAgent);
+document.write("<br />");
+document.write("BrowserLanguage=" + x.browserLanguage);
+document.write("<br />");
+document.write("SystemLanguage=" + x.systemLanguage);
+document.write("<br />");
+document.write("UserLanguage=" + x.userLanguage);
+
+
+
+function detectBrowser()
+{
+var browser=navigator.appName
+var b_version=navigator.appVersion
+var version=parseFloat(b_version)
+if ((browser=="Netscape"||browser=="Microsoft Internet Explorer") && (version>=4))
+  {alert("您的浏览器够先进了！")}
+else
+  {alert("是时候升级您的浏览器了！")}
+}
+
+</script>
+
+</head>
+
+<body  onload="detectBrowser()">
+</body>
+</html>
